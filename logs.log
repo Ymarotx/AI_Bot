@@ -1,0 +1,1042 @@
+client.py:348 #ERROR   [2024-06-03 19:12:32,289] - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7bf5dd56af80>
+connector.py:289 #ERROR   [2024-06-03 19:12:32,289] - asyncio - Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7bf5dd54f280>, 90316.525)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7bf5dd56ae60>
+dispatcher.py:520 #INFO    [2024-06-03 19:13:39,755] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 19:13:39,884] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 19:13:43,695] - aiogram.event - Update id=555694074 is not handled. Duration 0 ms by bot id=6251976390
+dispatcher.py:171 #INFO    [2024-06-03 19:13:51,435] - aiogram.event - Update id=555694075 is handled. Duration 394 ms by bot id=6251976390
+dispatcher.py:451 #WARNING [2024-06-03 19:13:54,707] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 19:13:54,708] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 19:13:54,711] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 19:15:10,208] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 19:15:10,296] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:451 #WARNING [2024-06-03 19:16:50,356] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 19:16:50,357] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 19:16:50,357] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 19:16:53,968] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 19:16:54,057] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 19:16:57,022] - aiogram.event - Update id=555694076 is handled. Duration 510 ms by bot id=6251976390
+dispatcher.py:451 #WARNING [2024-06-03 19:37:58,897] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 19:37:58,900] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 19:37:58,900] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 19:38:09,804] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 19:38:09,894] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 19:38:45,760] - aiogram.event - Update id=555694077 is not handled. Duration 35055 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 19:38:45,761] - aiogram.event - Cause exception while process update id=555694077 by bot id=6251976390
+FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 11, in command_start
+    audio = whisper.load_audio("audio.mp3")
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 58, in load_audio
+    out = run(cmd, capture_output=True, check=True).stdout
+  File "/usr/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'
+dispatcher.py:451 #WARNING [2024-06-03 19:39:46,277] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 19:39:46,277] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 19:39:46,278] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 19:39:54,365] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 19:39:54,525] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 19:39:57,470] - aiogram.event - Update id=555694078 is not handled. Duration 2364 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 19:39:57,470] - aiogram.event - Cause exception while process update id=555694078 by bot id=6251976390
+AttributeError: 'NoneType' object has no attribute 'shape'
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 11, in command_start
+    audio = whisper.pad_or_trim(message.audio)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 80, in pad_or_trim
+    if array.shape[axis] > length:
+AttributeError: 'NoneType' object has no attribute 'shape'
+dispatcher.py:171 #INFO    [2024-06-03 19:40:13,592] - aiogram.event - Update id=555694079 is not handled. Duration 2593 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 19:40:13,592] - aiogram.event - Cause exception while process update id=555694079 by bot id=6251976390
+AttributeError: 'NoneType' object has no attribute 'shape'
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 11, in command_start
+    audio = whisper.pad_or_trim(message.audio)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 80, in pad_or_trim
+    if array.shape[axis] > length:
+AttributeError: 'NoneType' object has no attribute 'shape'
+dispatcher.py:451 #WARNING [2024-06-03 19:42:30,460] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 19:42:30,463] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 19:42:30,464] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 19:42:39,998] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 19:42:40,099] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 19:42:45,951] - aiogram.event - Update id=555694080 is not handled. Duration 2138 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 19:42:45,951] - aiogram.event - Cause exception while process update id=555694080 by bot id=6251976390
+AttributeError: 'NoneType' object has no attribute 'shape'
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 12, in command_start
+    audio = whisper.pad_or_trim(message.audio)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 80, in pad_or_trim
+    if array.shape[axis] > length:
+AttributeError: 'NoneType' object has no attribute 'shape'
+dispatcher.py:451 #WARNING [2024-06-03 19:44:10,254] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 19:44:10,254] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 19:44:10,254] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 19:44:17,993] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 19:44:18,274] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 19:44:20,675] - aiogram.event - Update id=555694081 is not handled. Duration 2233 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 19:44:20,675] - aiogram.event - Cause exception while process update id=555694081 by bot id=6251976390
+AttributeError: 'Voice' object has no attribute 'shape'
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/pydantic/main.py", line 702, in __getattr__
+    return pydantic_extra[item]
+KeyError: 'shape'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 11, in command_start
+    audio = whisper.pad_or_trim(message.voice)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 80, in pad_or_trim
+    if array.shape[axis] > length:
+  File "/home/daniil/.local/lib/python3.10/site-packages/pydantic/main.py", line 704, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}') from exc
+AttributeError: 'Voice' object has no attribute 'shape'
+dispatcher.py:451 #WARNING [2024-06-03 19:48:21,521] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 19:48:21,523] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 19:48:21,523] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 19:48:29,690] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 19:48:29,767] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 19:48:34,369] - aiogram.event - Update id=555694082 is not handled. Duration 2673 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 19:48:34,369] - aiogram.event - Cause exception while process update id=555694082 by bot id=6251976390
+TypeError: expected str, bytes or os.PathLike object, not BytesIO
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 15, in command_start
+    audio = whisper.load_audio(voice_file)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 58, in load_audio
+    out = run(cmd, capture_output=True, check=True).stdout
+  File "/usr/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1796, in _execute_child
+    self.pid = _posixsubprocess.fork_exec(
+TypeError: expected str, bytes or os.PathLike object, not BytesIO
+dispatcher.py:451 #WARNING [2024-06-03 19:50:10,226] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 19:50:10,227] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 19:50:10,227] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 19:50:17,919] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 19:50:18,112] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 19:50:22,525] - aiogram.event - Update id=555694083 is not handled. Duration 2810 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 19:50:22,525] - aiogram.event - Cause exception while process update id=555694083 by bot id=6251976390
+AttributeError: '_io.BytesIO' object has no attribute 'shape'
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 15, in command_start
+    audio = whisper.pad_or_trim(voice_file)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 80, in pad_or_trim
+    if array.shape[axis] > length:
+AttributeError: '_io.BytesIO' object has no attribute 'shape'
+dispatcher.py:451 #WARNING [2024-06-03 19:51:09,806] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 19:51:09,806] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 19:51:09,807] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 19:51:17,513] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 19:51:17,600] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 19:51:22,872] - aiogram.event - Update id=555694084 is not handled. Duration 5122 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 19:51:22,875] - aiogram.event - Cause exception while process update id=555694084 by bot id=6251976390
+TypeError: expected np.ndarray (got _io.BytesIO)
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 24, in command_start
+    result = model.transcribe(voice_file)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/transcribe.py", line 122, in transcribe
+    mel = log_mel_spectrogram(audio, model.dims.n_mels, padding=N_SAMPLES)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 141, in log_mel_spectrogram
+    audio = torch.from_numpy(audio)
+TypeError: expected np.ndarray (got _io.BytesIO)
+dispatcher.py:451 #WARNING [2024-06-03 19:53:29,218] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 19:53:29,218] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 19:53:29,219] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 19:53:39,664] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 19:53:39,769] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:451 #WARNING [2024-06-03 19:53:53,477] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 19:53:53,478] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 19:53:53,478] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 19:53:59,786] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 19:53:59,865] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 19:54:06,977] - aiogram.event - Update id=555694086 is not handled. Duration 2976 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 19:54:06,978] - aiogram.event - Cause exception while process update id=555694086 by bot id=6251976390
+AttributeError: '_io.BytesIO' object has no attribute 'shape'
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 17, in command_start
+    audio = whisper.pad_or_trim(voice_file)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 80, in pad_or_trim
+    if array.shape[axis] > length:
+AttributeError: '_io.BytesIO' object has no attribute 'shape'
+dispatcher.py:451 #WARNING [2024-06-03 19:58:51,004] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 19:58:51,005] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 19:58:51,005] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 19:58:59,398] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 19:58:59,495] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 19:59:05,543] - aiogram.event - Update id=555694087 is not handled. Duration 2873 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 19:59:05,544] - aiogram.event - Cause exception while process update id=555694087 by bot id=6251976390
+TypeError: expected str, bytes or os.PathLike object, not BytesIO
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 15, in command_start
+    audio = whisper.load_audio(voice_file)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 58, in load_audio
+    out = run(cmd, capture_output=True, check=True).stdout
+  File "/usr/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1796, in _execute_child
+    self.pid = _posixsubprocess.fork_exec(
+TypeError: expected str, bytes or os.PathLike object, not BytesIO
+dispatcher.py:451 #WARNING [2024-06-03 19:59:32,616] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 19:59:32,616] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 19:59:32,617] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 19:59:41,095] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 19:59:41,176] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 19:59:47,087] - aiogram.event - Update id=555694088 is not handled. Duration 3237 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 19:59:47,087] - aiogram.event - Cause exception while process update id=555694088 by bot id=6251976390
+TypeError: expected str, bytes or os.PathLike object, not BytesIO
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 15, in command_start
+    audio = whisper.load_audio(voice_file)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 58, in load_audio
+    out = run(cmd, capture_output=True, check=True).stdout
+  File "/usr/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1796, in _execute_child
+    self.pid = _posixsubprocess.fork_exec(
+TypeError: expected str, bytes or os.PathLike object, not BytesIO
+dispatcher.py:451 #WARNING [2024-06-03 20:02:55,591] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 20:02:55,596] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 20:02:55,596] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 20:03:06,321] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 20:03:06,433] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 20:03:43,063] - aiogram.event - Update id=555694090 is not handled. Duration 3225 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 20:03:43,064] - aiogram.event - Cause exception while process update id=555694090 by bot id=6251976390
+TypeError: expected np.ndarray (got _io.BytesIO)
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 26, in command_start
+    result = model.transcribe(voice_file)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/transcribe.py", line 122, in transcribe
+    mel = log_mel_spectrogram(audio, model.dims.n_mels, padding=N_SAMPLES)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 141, in log_mel_spectrogram
+    audio = torch.from_numpy(audio)
+TypeError: expected np.ndarray (got _io.BytesIO)
+dispatcher.py:451 #WARNING [2024-06-03 20:05:17,800] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 20:05:17,814] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 20:05:17,814] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 20:05:30,840] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 20:05:31,041] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 20:05:44,653] - aiogram.event - Update id=555694092 is not handled. Duration 3475 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 20:05:44,658] - aiogram.event - Cause exception while process update id=555694092 by bot id=6251976390
+TypeError: expected np.ndarray (got _io.BytesIO)
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 26, in command_start
+    result = model.transcribe(voice_file,fp16=False)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/transcribe.py", line 122, in transcribe
+    mel = log_mel_spectrogram(audio, model.dims.n_mels, padding=N_SAMPLES)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 141, in log_mel_spectrogram
+    audio = torch.from_numpy(audio)
+TypeError: expected np.ndarray (got _io.BytesIO)
+dispatcher.py:451 #WARNING [2024-06-03 20:06:47,276] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 20:06:47,276] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 20:06:47,279] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 20:06:57,462] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 20:06:57,558] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 20:07:04,086] - aiogram.event - Update id=555694093 is not handled. Duration 3438 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 20:07:04,088] - aiogram.event - Cause exception while process update id=555694093 by bot id=6251976390
+TypeError: expected np.ndarray (got Voice)
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 26, in command_start
+    result = model.transcribe(message.voice,fp16=False)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/transcribe.py", line 122, in transcribe
+    mel = log_mel_spectrogram(audio, model.dims.n_mels, padding=N_SAMPLES)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 141, in log_mel_spectrogram
+    audio = torch.from_numpy(audio)
+TypeError: expected np.ndarray (got Voice)
+dispatcher.py:451 #WARNING [2024-06-03 20:08:40,724] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 20:08:40,731] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 20:08:40,731] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 20:08:51,833] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 20:08:51,931] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:451 #WARNING [2024-06-03 20:13:39,793] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 20:13:39,812] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 20:13:39,815] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 20:13:52,117] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 20:13:52,204] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:451 #WARNING [2024-06-03 20:19:34,856] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 20:19:34,878] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 20:19:34,881] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 20:19:46,458] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 20:19:46,530] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:451 #WARNING [2024-06-03 20:20:32,669] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 20:20:32,671] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 20:20:32,671] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 20:20:43,719] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 20:20:43,799] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:520 #INFO    [2024-06-03 20:21:42,135] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 20:21:42,216] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 20:21:48,288] - aiogram.event - Update id=555694098 is not handled. Duration 3361 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 20:21:48,289] - aiogram.event - Cause exception while process update id=555694098 by bot id=6251976390
+TypeError: expected np.ndarray (got _io.BytesIO)
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 26, in command_start
+    result = model.transcribe(voice_file,fp16=False)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/transcribe.py", line 122, in transcribe
+    mel = log_mel_spectrogram(audio, model.dims.n_mels, padding=N_SAMPLES)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 141, in log_mel_spectrogram
+    audio = torch.from_numpy(audio)
+TypeError: expected np.ndarray (got _io.BytesIO)
+dispatcher.py:171 #INFO    [2024-06-03 20:23:15,453] - aiogram.event - Update id=555694099 is not handled. Duration 3172 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 20:23:15,540] - aiogram.event - Cause exception while process update id=555694099 by bot id=6251976390
+TypeError: expected np.ndarray (got _io.BytesIO)
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 26, in command_start
+    result = model.transcribe(voice_file,fp16=False)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/transcribe.py", line 122, in transcribe
+    mel = log_mel_spectrogram(audio, model.dims.n_mels, padding=N_SAMPLES)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 141, in log_mel_spectrogram
+    audio = torch.from_numpy(audio)
+TypeError: expected np.ndarray (got _io.BytesIO)
+dispatcher.py:171 #INFO    [2024-06-03 20:25:17,743] - aiogram.event - Update id=555694100 is not handled. Duration 3627 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 20:25:17,743] - aiogram.event - Cause exception while process update id=555694100 by bot id=6251976390
+TypeError: expected np.ndarray (got _io.BytesIO)
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 26, in command_start
+    result = model.transcribe(voice_file,fp16=False)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/transcribe.py", line 122, in transcribe
+    mel = log_mel_spectrogram(audio, model.dims.n_mels, padding=N_SAMPLES)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 141, in log_mel_spectrogram
+    audio = torch.from_numpy(audio)
+TypeError: expected np.ndarray (got _io.BytesIO)
+dispatcher.py:171 #INFO    [2024-06-03 20:25:43,207] - aiogram.event - Update id=555694101 is not handled. Duration 1 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 20:25:43,207] - aiogram.event - Cause exception while process update id=555694101 by bot id=6251976390
+AttributeError: 'NoneType' object has no attribute 'file_id'
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 13, in command_start
+    file = await bot.get_file(voice.file_id)
+AttributeError: 'NoneType' object has no attribute 'file_id'
+dispatcher.py:171 #INFO    [2024-06-03 20:27:57,321] - aiogram.event - Update id=555694102 is not handled. Duration 6218 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 20:27:57,345] - aiogram.event - Cause exception while process update id=555694102 by bot id=6251976390
+TypeError: expected np.ndarray (got _io.BytesIO)
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 26, in command_start
+    result = model.transcribe(voice_file,fp16=False)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/transcribe.py", line 122, in transcribe
+    mel = log_mel_spectrogram(audio, model.dims.n_mels, padding=N_SAMPLES)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 141, in log_mel_spectrogram
+    audio = torch.from_numpy(audio)
+TypeError: expected np.ndarray (got _io.BytesIO)
+dispatcher.py:451 #WARNING [2024-06-03 20:27:57,456] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 20:27:57,476] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 20:27:57,477] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 20:28:12,530] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 20:28:12,628] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 20:29:44,641] - aiogram.event - Update id=555694104 is not handled. Duration 4664 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 20:29:44,651] - aiogram.event - Cause exception while process update id=555694104 by bot id=6251976390
+TypeError: expected np.ndarray (got _io.BytesIO)
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 26, in command_start
+    result = model.transcribe(voice_file,fp16=False)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/transcribe.py", line 122, in transcribe
+    mel = log_mel_spectrogram(audio, model.dims.n_mels, padding=N_SAMPLES)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 141, in log_mel_spectrogram
+    audio = torch.from_numpy(audio)
+TypeError: expected np.ndarray (got _io.BytesIO)
+dispatcher.py:171 #INFO    [2024-06-03 20:31:50,364] - aiogram.event - Update id=555694105 is not handled. Duration 3899 ms by bot id=6251976390
+dispatcher.py:313 #ERROR   [2024-06-03 20:31:50,367] - aiogram.event - Cause exception while process update id=555694105 by bot id=6251976390
+TypeError: expected np.ndarray (got _io.BytesIO)
+Traceback (most recent call last):
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/daniil/.local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+  File "/home/daniil/Work/PycharmProjects/TelegramBots/AI-Bot/handlers/user_handlers.py", line 26, in command_start
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/transcribe.py", line 122, in transcribe
+    mel = log_mel_spectrogram(audio, model.dims.n_mels, padding=N_SAMPLES)
+  File "/home/daniil/.local/lib/python3.10/site-packages/whisper/audio.py", line 141, in log_mel_spectrogram
+    audio = torch.from_numpy(audio)
+TypeError: expected np.ndarray (got _io.BytesIO)
+dispatcher.py:451 #WARNING [2024-06-03 20:37:29,577] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 20:37:29,579] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 20:37:29,579] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 20:37:41,807] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 20:37:41,984] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:171 #INFO    [2024-06-03 20:37:58,537] - aiogram.event - Update id=555694106 is handled. Duration 16282 ms by bot id=6251976390
+dispatcher.py:451 #WARNING [2024-06-03 20:39:09,851] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 20:39:09,852] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 20:39:09,852] - aiogram.dispatcher - Polling stopped
+dispatcher.py:520 #INFO    [2024-06-03 20:39:24,917] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO    [2024-06-03 20:39:24,997] - aiogram.dispatcher - Run polling for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:451 #WARNING [2024-06-03 20:40:43,322] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO    [2024-06-03 20:40:43,335] - aiogram.dispatcher - Polling stopped for bot @MyMoulagaBot id=6251976390 - 'Working Field'
+dispatcher.py:547 #INFO    [2024-06-03 20:40:43,335] - aiogram.dispatcher - Polling stopped
