@@ -1,4 +1,5 @@
 import io
+import os
 
 from aiogram import Router, Bot,F
 from aiogram.filters import CommandStart
@@ -21,8 +22,10 @@ async def get_voice(message:Message,
     voice = message.voice
     file = await bot.get_file(voice.file_id)
     voice_file = await bot.download_file(file.file_path)
-    res_voice = await AI_transformation_text.voice_answer(voice_file=voice_file)
+    res_voice,file_del_1,file_del_2 = await AI_transformation_text.voice_answer(voice_file=voice_file)
     await message.answer_voice(res_voice)
+    os.remove(file_del_1)
+    os.remove(file_del_2)
 
 @router.message(~F.voice)
 async def echo(message:Message):
