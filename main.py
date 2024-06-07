@@ -6,7 +6,7 @@ from config_data.config import Config
 from handlers.user_handlers import router as user_hand_rout
 
 logger = logging.getLogger(__name__)
-
+Config = Config()
 async def main():
     logging.basicConfig(level=logging.INFO,
                         # filename='logs.log',
