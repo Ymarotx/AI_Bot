@@ -237,3 +237,4 @@ xkit==0.0.0
 yarl==1.9.2
 zipp==1.0.0
 pymorphy2==2.4.4
+openai==1.30.5
