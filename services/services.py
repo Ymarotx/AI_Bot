@@ -118,15 +118,6 @@ class AI_transformation_text:
             return "I don't understand" ,file_del
 
     @classmethod
-    async def request_audio_speech_create(cls,text_answer_for_voice):
-        response_task = client.audio.speech.create(
-            model="tts-1",
-            voice="alloy",
-            input=f"{text_answer_for_voice}"
-        )
-        return response_task
-
-    @classmethod
     async def voice_answer(cls,voice_file):
         text_answer_for_voice,file_del = await cls.assistant(voice_file)
         generate_name = secrets.token_hex(2)
